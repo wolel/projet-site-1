@@ -1,0 +1,189 @@
+body{
+    margin: 0 auto 0 auto ;
+    height: auto;
+    padding: 0;
+    background-color:#333 ;
+    width: 1500px;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+header{
+    background-color: white;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    background-color: #ffc300;
+    color: black;
+}
+/*----------------------------------------
+The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    margin: 50px 50px 0 50px;
+    width: 700px;
+    height: 500px;
+   /* border: 1px solid #f1f1f1;*/
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+    background-image: url("images/tarte_aux_maroilles_2.jpg");
+    background-size: cover;
+    color: black;
+    border-radius: 2px;
+    box-shadow: 3px 5px 5px black;
+}
+
+/* Style the back side */
+.flip-box-back {
+ /*   background-color: dodgerblue;*/
+    background-image: url("images/recette tarte maroilles/recette_maroille.jpg");
+    background-size: 100%;
+    background-color: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+    border-radius: 2px;
+    box-shadow: 3px 5px 5px black;
+}
+.fricadelleFF{
+    background-image: url("images/Fricadelles_1.jpg");
+}
+.fricadelleFB{
+    background-image: url("images/recette_fricadelle/recette_fricadelle.jpg");
+}
+.tarte_sucreFB{
+    background-image: url("images/recette_tarteAuSucre/recette_tarte_sucre-03.jpg");
+}
+.tarte_sucreFF{
+    background-image: url("images/Tarte_aux_sucre_2.jpg");
+}
+/*-----------------END of FLIP--------------------------*/
+.container_photo{
+    display: flex;
+   justify-items: center;
+    width: 600px;
+    margin: 10px 0 0 10px;
+}
+h4{
+    color: #ffc300;
+    font-family: "Lobster 1.4", serif;
+    font-size: 20px;
+}
+
+#LOGO{
+    margin-left: 400px;
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    padding: 20px 80px 20px 80px;
+    font-family: "Open Sans", serif;
+    font-size: 15px;
+
+}
+a:hover{
+
+    transition: .4s ease-in-out;
+    background-color: #333333;
+    color: white;
+    font-family: "Open Sans SemiBold", serif;
+}
+.photos{
+    width: 700px;
+    margin: 80px 100px 0 0;
+    transition: transform.4s ease-in-out;
+}
+.photos:hover{
+    transform: scale(1.2);
+    border-radius: 5px;
+    border: 2px solid white;
+
+}
+p{
+    color: white;
+    font-size: 15px;
+    font-family: "Open Sans",serif;
+}
+h2{
+    font-size: 45px;
+    font-family: bromello,serif;
+    color: #ffc300;
+}
+h3{
+    font-family: "Open Sans Light", serif;
+    color: white;
+    font-size: 15px;
+}
+.texte{
+    width: 500px;
+    text-align: justify;
+    margin-top: 100px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+#tarte_maroilles{
+    display: flex;
+    justify-content: center;
+}
+#tarte_sucre{
+    display: flex;
+    justify-content: center;
+}
+#cramique{
+    display: flex;
+    justify-content: center;
+}
+#bière_nord{
+    display: flex;
+    justify-content: center;
+}
+#fricadelle{
+    display: flex;
+    justify-content: center;
+}
+
+#bouttonUP{
+    float:right;
+}
+
+footer{
+    background-color: #676767;
+    font-family: "Open Sans",serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding:30px;
+    margin-top: 100px;
+}
+#reseaux_sociaux{
+    float: right;
+    margin-top: -54px;
+    margin-right: 70px;
+}
+
